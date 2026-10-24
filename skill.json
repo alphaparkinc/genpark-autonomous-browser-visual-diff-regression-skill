@@ -1,0 +1,36 @@
+{
+  "name": "genpark-autonomous-browser-visual-diff-regression-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous web UI visual regression and bounding box displacement analyzer detecting layout shifts and CSS breakages.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "browser-testing",
+  "tags": [
+    "visual-regression",
+    "layout-shift",
+    "ui-testing",
+    "playwright-agent",
+    "visual-diff"
+  ],
+  "inputs": {
+    "baseline_elements": {
+      "type": "array"
+    },
+    "current_elements": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "regression_test_id": {
+      "type": "string"
+    },
+    "visual_diff_status": {
+      "type": "string"
+    },
+    "regressions_detected_count": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
